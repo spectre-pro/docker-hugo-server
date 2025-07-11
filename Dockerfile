@@ -7,6 +7,8 @@ RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/c
 
 RUN apk add git
 
+RUN git config --global --add safe.directory /app
+
 EXPOSE 1313
 
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

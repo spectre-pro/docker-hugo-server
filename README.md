@@ -3,8 +3,9 @@
 ```
 docker run \
     -d \
-    -p 1010:1313 \
+    -p 1313:1313 \
     --name hugo-run \
+    --restart unless-stopped \
     -v your/hugo/file/path:/app \
     ghcr.io/spectre-pro/docker-hugo-server
 ```

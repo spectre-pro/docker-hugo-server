@@ -7,6 +7,6 @@ RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/c
 
 RUN apk add git
 
-EXPOSE 1010
+EXPOSE 1313
 
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

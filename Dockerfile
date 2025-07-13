@@ -11,4 +11,4 @@ RUN git config --global --add safe.directory /app
 
 EXPOSE 1313
 
-CMD ["hugo", "&&", "hugo", "server", "--bind", "0.0.0.0"]
+CMD ["sh", "-c", "hugo && hugo server --bind 0.0.0.0"]

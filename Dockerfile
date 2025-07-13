@@ -9,10 +9,6 @@ RUN apk add git
 
 RUN git config --global --add safe.directory /app
 
-COPY . .
-
-RUN hugo
-
 EXPOSE 1313
 
-CMD ["hugo", "server", "--bind", "0.0.0.0"]
+CMD ["hugo", "&&", "hugo", "server", "--bind", "0.0.0.0"]

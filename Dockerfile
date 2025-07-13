@@ -9,6 +9,8 @@ RUN apk add git
 
 RUN git config --global --add safe.directory /app
 
+COPY . .
+
 RUN hugo
 
 EXPOSE 1313
